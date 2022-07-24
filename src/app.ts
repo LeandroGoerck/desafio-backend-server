@@ -1,5 +1,6 @@
 import express from 'express';
 import loginRoutes from './routes/loginRoutes';
+import playlistRoutes from './routes/playlistRoutes';
 import registerRoutes from './routes/registerRoutes';
 import errorMiddleware from './middlewares/errorMiddleware';
 
@@ -24,6 +25,8 @@ class App {
 
     this.app.use('/login', loginRoutes);
     this.app.use('/register', registerRoutes);
+
+    this.app.use('/playlist', playlistRoutes);
 
     this.app.use(errorMiddleware);
   }

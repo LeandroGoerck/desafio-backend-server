@@ -39,7 +39,7 @@ Com as seguintes funcionalidades:
   - [ ] Editar um usuário
   - [ ] Deletar um usuário
   - [ ] Listar todos os usuários
-  - [ ] Login
+  - [x] Login
   - [x] Registrar-se
   - [x] Obs.: Todos os usuário que se cadastram possuem a role USER.
 
