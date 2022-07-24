@@ -43,10 +43,10 @@ Com as seguintes funcionalidades:
   - [x] Registrar-se
   - [x] Obs.: Todos os usuário que se cadastram possuem a role USER.
 
-  - [ ] As rotas de login e registro devem ser as únicas de acesso público. Todas as outras rotas devem ser restritas a usuários autenticados.
+  - [x] As rotas de login e registro devem ser as únicas de acesso público. Todas as outras rotas devem ser restritas a usuários autenticados.
   - [ ] As funcionalidades referente a usuários devem ser acessíveis apenas para usuários com a role "ADMIN" e retornando 403 para os demais usuários.
-  - [ ] Se o usuário autenticado tiver a role "USER", então apenas as playlists criadas pelo mesmo devem ser acessíveis.
-  - [ ] Importante: O usuário inicial deve se chamar "admin" e a senha "admin" e utilizando a role "ADMIN".
+  - [x] Se o usuário autenticado tiver a role "USER", então apenas as playlists criadas pelo mesmo devem ser acessíveis.
+  - [x] Importante: O usuário inicial deve se chamar "admin" e a senha "admin" e utilizando a role "ADMIN".
 
   ## Banco de dados
 O banco de dados utilizado é o mysql.
