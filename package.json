@@ -1,0 +1,17 @@
+{
+  "name": "desafio-backend-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:LeandroGoerck/desafio-backend-server.git",
+  "author": "Leandro Elias Goerck <lgoerck@universo.univates.br>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.21.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19",
+    "sequelize-cli": "^6.4.1"
+  }
+}
