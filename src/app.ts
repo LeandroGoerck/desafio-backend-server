@@ -1,4 +1,6 @@
 import express from 'express';
+import registerRoutes from './routes/registerRoutes';
+import handleErrors from './middlewares/errorMiddleware';
 
 class App {
   public app: express.Express;
@@ -18,6 +20,10 @@ class App {
 
     this.app.use(accessControl);
     this.app.use(express.json());
+
+    this.app.use('/register', registerRoutes);
+
+    this.app.use(handleErrors);
   }
   public start(PORT: string | number):void {
     this.app.listen(PORT);
