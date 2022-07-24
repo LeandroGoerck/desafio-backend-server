@@ -31,10 +31,10 @@ Playlists.init({
   tableName: 'playlist',
   timestamps: false,
 });
-Playlists.belongsToMany(Users, { through: 'user_has_playlist', as: 'listeners' });
-Users.belongsToMany(Playlists, { through: 'user_has_playlist', as: 'playlists' });
+Playlists.belongsToMany(Users, { through: 'user_has_playlist', as: 'listeners', foreignKey: "playlist_id" });
+Users.belongsToMany(Playlists, { through: 'user_has_playlist', as: 'playlists', foreignKey: "user_id" });
 
-Musics.belongsToMany(Playlists, { through: 'playlist_has_music', as: 'playlists' });
-Playlists.belongsToMany(Musics, { through: 'playlist_has_music', as: 'musics' });
+Musics.belongsToMany(Playlists, { through: 'playlist_has_music', as: 'playlists', foreignKey: "music_id" });
+Playlists.belongsToMany(Musics, { through: 'playlist_has_music', as: 'musics', foreignKey: "playlist_id" });
 
 export default Playlists;
