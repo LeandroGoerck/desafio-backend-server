@@ -34,6 +34,9 @@ export default class UserService {
     const salt = bcryptjs.genSaltSync(10);
     const hash = bcryptjs.hashSync(password, salt);
 
+    const userFound = await UserModel.findOne({ where: { email } });
+    if (userFound) throw ERR.thisUserAlreadyExists;
+
     const userObj = { name, email, password: hash, role: 'USER' };
     const createdMatch = await UserModel.create(userObj);
     return createdMatch;
