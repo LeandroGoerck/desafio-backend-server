@@ -34,6 +34,31 @@ const MockBadRequest4 = {
   role: "USER"
 }
 
+
+
+const MockUserlogin = {
+  username: "Leandro",
+  password: "lg_admin"
+}
+
+const MockUserLoginReturn2 = {
+  id: 4,
+  name: "Leandro",
+}
+
+const MockLoginReturn = {
+  user: {
+      id: 6,
+      username: "Leandro"
+  },
+  token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkxlYW5kcm8iLCJwYXNzd29yZCI6ImxnX2FkbWluIiwiaWF0IjoxNjU4Njg0NDQ1LCJleHAiOjE2NTg3NzA4NDV9.6VhS4OfAJ-4rWcXJEJORz81DlCA7fFZP00N7YE7l98I"
+}
+
+const MockToken = {
+  token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkxlYW5kcm8iLCJwYXNzd29yZCI6ImxnX2FkbWluIiwiaWF0IjoxNjU4Njg0NDQ1LCJleHAiOjE2NTg3NzA4NDV9.6VhS4OfAJ-4rWcXJEJORz81DlCA7fFZP00N7YE7l98I"
+}
+
+
 export {
   MockUserRegister,
   MockUserRegisterReturn,
@@ -41,4 +66,8 @@ export {
   MockBadRequest2,
   MockBadRequest3,
   MockBadRequest4,
+  MockUserlogin,
+  MockLoginReturn,
+  MockToken,
+  MockUserLoginReturn2,
 }
