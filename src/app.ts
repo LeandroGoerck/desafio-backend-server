@@ -1,8 +1,10 @@
 import express from 'express';
 import loginRoutes from './routes/loginRoutes';
 import playlistRoutes from './routes/playlistRoutes';
+import userRoutes from './routes/userRoutes';
 import registerRoutes from './routes/registerRoutes';
 import errorMiddleware from './middlewares/errorMiddleware';
+import validateToken from './middlewares/validateToken';
 
 class App {
   public app: express.Express;
@@ -26,7 +28,9 @@ class App {
     this.app.use('/login', loginRoutes);
     this.app.use('/register', registerRoutes);
 
+    this.app.use(validateToken);
     this.app.use('/playlist', playlistRoutes);
+    this.app.use('/user', userRoutes);
 
     this.app.use(errorMiddleware);
   }
