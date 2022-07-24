@@ -18,6 +18,21 @@ module.exports = {
           name: 'Rolling in the deep Playlist',
           genre: 2,
         },
+        {
+          id: 3,
+          name: 'This is the third playlist',
+          genre: 2,
+        },
+        {
+          id: 4,
+          name: 'This is the fourth playlist',
+          genre: 2,
+        },
+        {
+          id: 5,
+          name: 'Secret Playlist',
+          genre: 2,
+        },
       ],
       {},
     );
