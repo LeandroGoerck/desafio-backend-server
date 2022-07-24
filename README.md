@@ -19,11 +19,22 @@ Instale as dependências:
 ```  
 npm install
 ```
+
+Renomeie o arquivo .env.example para .env e coloque nele as credenciais do seu banco de dados
+
+Configure o banco de dados inicial:
+```  
+npm run db:reset
+```
   
 Execute a aplicação
 ```  
 npm start  
 ```
+
+Para testar a API utilize a coleção de requests do arquivo: myPlaylist.postman_collection  
+Importe esse arquivo para o postman 
+[Postman Collection](myPlaylist.postman_collection)
   
 # Descritivo do desafio
 
@@ -31,10 +42,10 @@ npm start
 O desafio é implementar um backend REST para uma aplicação de músicas utilizando typescript.
 
 Com as seguintes funcionalidades:
-  - [ ] Criar uma playlist
-  - [ ] Editar uma playlist
-  - [ ] Deletar uma playlist
-  - [ ] Listar todas as playlists
+  - [x] Criar uma playlist
+  - [x] Editar uma playlist
+  - [x] Deletar uma playlist
+  - [x] Listar todas as playlists
   - [x] Criar um usuário
   - [x] Editar um usuário
   - [x] Deletar um usuário
