@@ -1,6 +1,6 @@
 import express from 'express';
 import registerRoutes from './routes/registerRoutes';
-import handleErrors from './middlewares/errorMiddleware';
+import errorMiddleware from './middlewares/errorMiddleware';
 
 class App {
   public app: express.Express;
@@ -23,7 +23,7 @@ class App {
 
     this.app.use('/register', registerRoutes);
 
-    this.app.use(handleErrors);
+    this.app.use(errorMiddleware);
   }
   public start(PORT: string | number):void {
     this.app.listen(PORT);
