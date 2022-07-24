@@ -58,7 +58,6 @@ export default class UserService {
     const { userGotByName } = await this.getByName(username);
     if (!userGotByName) throw ERR.thisUserDoesNotExist;
     if (userGotByName.role !== 'ADMIN') throw ERR.thisResourceIsOnlyForAdmins;
-    console.log('role', userGotByName.role);
   };
 
   public getAuthData = async (username: string) => {
