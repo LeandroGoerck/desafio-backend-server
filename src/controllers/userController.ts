@@ -32,6 +32,9 @@ export default class UserController {
 
   public create = async (req: Request, res: Response, next: NextFunction) => {
     try {
+      const { authData } = res.locals;
+      await this.service.isAdmin(authData.username);
+
       const { name, email, password } = req.body;
       const createdUser = await this.service.create({ name, email, password } as IUser);
       return res.status(201).json(createdUser);
@@ -42,6 +45,9 @@ export default class UserController {
 
   public update = async (req: Request, res: Response, next: NextFunction) => {
     try {
+      const { authData } = res.locals;
+      await this.service.isAdmin(authData.username);
+
       const { id, name, email, password, role } = req.body;
       await this.service.update(id, { name, email, password, role } as IUser);
       return res.status(200).json({ message: 'Updated' });
@@ -52,6 +58,9 @@ export default class UserController {
 
   public delete = async (req: Request, res: Response, next: NextFunction) => {
     try {
+      const { authData } = res.locals;
+      await this.service.isAdmin(authData.username);
+
       const { id } = req.body;
       await this.service.delete(id);
       return res.status(200).json({ message: 'Destroyed' });

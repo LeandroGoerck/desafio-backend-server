@@ -1,11 +1,11 @@
 import { Model } from 'sequelize/types';
-import IMusicSimple from './IMusicSimple';
+import IMusic from './IMusic';
 
 interface IPlaylist extends Model{
   id: number;
   name: string;
   genre: number;
-  musics: IMusicSimple[];
+  musics: IMusic[];
 }
 
 export default IPlaylist;

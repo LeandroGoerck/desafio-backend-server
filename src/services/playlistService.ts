@@ -11,9 +11,9 @@ export default class PlaylistService {
       attributes: ['id', 'name'],
       through: { attributes: [] } };
     const listenersWithUserId = { model: UserModel,
-      where: { id: userId },
+      where: { id: userId  },
       as: 'listeners',
-      attributes: [],
+      attributes: ['id'],
       through: { attributes: [] } };
     const playlistData = await PlaylistModel
       .findAll({ include: [musics, listenersWithUserId] });
@@ -42,7 +42,8 @@ export default class PlaylistService {
 
   public create = async (playlist: IPlaylist) => {
     const { id, name, genre, musics } = playlist;
-    const createdPlaylist = await PlaylistModel.create({ id, name, genre });
+    const createdPlaylist = await PlaylistModel.create({ id, name, genre, musics });
+    // console.log(musics)
     // await MusicsModel.bulkCreate(musics);
     return createdPlaylist;
   };
