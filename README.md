@@ -35,10 +35,10 @@ Com as seguintes funcionalidades:
   - [ ] Editar uma playlist
   - [ ] Deletar uma playlist
   - [ ] Listar todas as playlists
-  - [ ] Criar um usuário
-  - [ ] Editar um usuário
-  - [ ] Deletar um usuário
-  - [ ] Listar todos os usuários
+  - [x] Criar um usuário
+  - [x] Editar um usuário
+  - [x] Deletar um usuário
+  - [x] Listar todos os usuários
   - [x] Login
   - [x] Registrar-se
   - [x] Obs.: Todos os usuário que se cadastram possuem a role USER.
