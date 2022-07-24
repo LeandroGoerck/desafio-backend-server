@@ -1,4 +1,4 @@
-import bcryptjs from 'bcryptjs';
+import getHash from './getHash';
 import UserModel from '../database/models/UserModel';
 import IUser from '../interfaces/IUser';
 import ERR from './errors';
@@ -11,14 +11,12 @@ const registerShema = zod.object({
 });
 
 export default class RegisterService {
-  public register = async (register: IUser) => {
-    const { name, email, password } = registerShema.parse(register);
+  public register = async (credentials: IUser) => {
+    const { name, email, password } = registerShema.parse(credentials);
 
-    const salt = bcryptjs.genSaltSync(10);
-    const hash = bcryptjs.hashSync(password, salt);
+    const hash = getHash(password);
 
     const userFound = await UserModel.findOne({ where: { email } });
-    console.log(userFound);
     if (userFound) throw ERR.thisUserAlreadyExists;
 
     const registerObj = { name, email, password: hash, role: 'USER' };
