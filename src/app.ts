@@ -1,4 +1,5 @@
 import express from 'express';
+import loginRoutes from './routes/loginRoutes';
 import registerRoutes from './routes/registerRoutes';
 import errorMiddleware from './middlewares/errorMiddleware';
 
@@ -21,6 +22,7 @@ class App {
     this.app.use(accessControl);
     this.app.use(express.json());
 
+    this.app.use('/login', loginRoutes);
     this.app.use('/register', registerRoutes);
 
     this.app.use(errorMiddleware);
