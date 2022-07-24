@@ -13,7 +13,6 @@ const generateToken = (username: string, password: string): { token : string } =
 
 const checkToken = async (authorization: string) : Promise<jwt.JwtPayload> => {
   const decodedToken = jwt.verify(authorization, JWT_SECRET);
-  console.log('decodedToken', decodedToken);
   if (!decodedToken) throw ERR.jwtCheckError;
   return decodedToken as jwt.JwtPayload;
 };
