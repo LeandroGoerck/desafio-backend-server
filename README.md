@@ -31,10 +31,10 @@ npm start
 O desafio é implementar um backend REST para uma aplicação de músicas utilizando typescript.
 
 Com as seguintes funcionalidades:
-  - [ ] Criar uma playlist
-  - [ ] Editar uma playlist
-  - [ ] Deletar uma playlist
-  - [ ] Listar todas as playlists
+  - [x] *Criar uma playlist
+  - [x] Editar uma playlist
+  - [x] Deletar uma playlist
+  - [x] Listar todas as playlists
   - [x] Criar um usuário
   - [x] Editar um usuário
   - [x] Deletar um usuário
@@ -44,7 +44,7 @@ Com as seguintes funcionalidades:
   - [x] Obs.: Todos os usuário que se cadastram possuem a role USER.
 
   - [x] As rotas de login e registro devem ser as únicas de acesso público. Todas as outras rotas devem ser restritas a usuários autenticados.
-  - [ ] As funcionalidades referente a usuários devem ser acessíveis apenas para usuários com a role "ADMIN" e retornando 403 para os demais usuários.
+  - [x] As funcionalidades referente a usuários devem ser acessíveis apenas para usuários com a role "ADMIN" e retornando 403 para os demais usuários.
   - [x] Se o usuário autenticado tiver a role "USER", então apenas as playlists criadas pelo mesmo devem ser acessíveis.
   - [x] Importante: O usuário inicial deve se chamar "admin" e a senha "admin" e utilizando a role "ADMIN".
 
