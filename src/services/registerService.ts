@@ -17,7 +17,6 @@ export default class RegisterService {
     const hash = getHash(password);
 
     const userFound = await UserModel.findOne({ where: { email } });
-    console.log(userFound);
     if (userFound) throw ERR.thisUserAlreadyExists;
 
     const registerObj = { name, email, password: hash, role: 'USER' };
