@@ -10,6 +10,11 @@
     "mysql2": "^2.3.3",
     "sequelize": "^6.21.3"
   },
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon --watch \"./src/**\" ./src/server.ts",
+    "build": "tsc"
+ },
   "devDependencies": {
     "@types/node": "^18.0.6",
     "nodemon": "^2.0.19",
