@@ -31,7 +31,7 @@ npm start
 O desafio é implementar um backend REST para uma aplicação de músicas utilizando typescript.
 
 Com as seguintes funcionalidades:
-  - [x] *Criar uma playlist
+  - [x] *Criar uma playlist / *não adiciona as musicas
   - [x] Editar uma playlist
   - [x] Deletar uma playlist
   - [x] Listar todas as playlists
