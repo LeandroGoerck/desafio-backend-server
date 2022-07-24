@@ -40,8 +40,8 @@ Com as seguintes funcionalidades:
   - [ ] Deletar um usuário
   - [ ] Listar todos os usuários
   - [ ] Login
-  - [ ] Registrar-se
-  - [ ] Obs.: Todos os usuário que se cadastram possuem a role USER.
+  - [x] Registrar-se
+  - [x] Obs.: Todos os usuário que se cadastram possuem a role USER.
 
   - [ ] As rotas de login e registro devem ser as únicas de acesso público. Todas as outras rotas devem ser restritas a usuários autenticados.
   - [ ] As funcionalidades referente a usuários devem ser acessíveis apenas para usuários com a role "ADMIN" e retornando 403 para os demais usuários.
