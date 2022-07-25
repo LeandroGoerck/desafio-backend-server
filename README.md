@@ -1,15 +1,14 @@
-# Desafio Backend Server
+# Desafio Backend Server  
+Seja bem vindo ao repositório do desafio Desenvolvedor Backend jr ServerSoftware
 
-# Instruções para rodar
-
-## 💻 Instalando o projeto
+## 💻 Instruções para rodar
 
 Clone o repositório:  
 ```
 git clone git@github.com:LeandroGoerck/desafio-backend-server.git
 ```
     
-Acesse a pasta do repositório  
+Acesse a pasta do repositório:  
 ```
 cd desafio-backend-server
 ```
