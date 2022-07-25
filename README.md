@@ -2,7 +2,6 @@
 
 # Instruções para rodar
 
-Um sistema que permite visualizar, buscar, filtrar, favoritar, compartilhar e acompanhar o processo de preparação de receitas e drinks.
 ## 💻 Instalando o projeto
 
 Clone o repositório:  
@@ -19,6 +18,9 @@ Instale as dependências:
 ```  
 npm install
 ```
+
+Suba um banco de dados mysql
+Renomeie o arquivo ```.env.example``` para ```.env``` e configure com as credencias do seu banco de dados 
   
 Execute a aplicação
 ```  
