@@ -18,17 +18,17 @@ Instale as dependências:
 npm install
 ```
 
-<<<<<<< HEAD
+
 Renomeie o arquivo .env.example para .env e coloque nele as credenciais do seu banco de dados
 
 Configure o banco de dados inicial:
 ```  
 npm run db:reset
 ```
-=======
+
 Suba um banco de dados mysql  
 Renomeie o arquivo ```.env.example``` para ```.env``` e configure com as credencias do seu banco de dados 
->>>>>>> d560e3708c062e7da5f798f6d3f9bd7832278886
+
   
 Execute a aplicação
 ```  
