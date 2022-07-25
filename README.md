@@ -19,7 +19,7 @@ Instale as dependências:
 npm install
 ```
 
-Suba um banco de dados mysql
+Suba um banco de dados mysql  
 Renomeie o arquivo ```.env.example``` para ```.env``` e configure com as credencias do seu banco de dados 
   
 Execute a aplicação
