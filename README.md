@@ -1,16 +1,14 @@
-# Desafio Backend Server
+# Desafio Backend Server  
+Seja bem vindo ao repositório do desafio Desenvolvedor Backend jr ServerSoftware
 
-# Instruções para rodar
-
-Um sistema que permite visualizar, buscar, filtrar, favoritar, compartilhar e acompanhar o processo de preparação de receitas e drinks.
-## 💻 Instalando o projeto
+## 💻 Instruções para rodar
 
 Clone o repositório:  
 ```
 git clone git@github.com:LeandroGoerck/desafio-backend-server.git
 ```
     
-Acesse a pasta do repositório  
+Acesse a pasta do repositório:  
 ```
 cd desafio-backend-server
 ```
@@ -20,12 +18,17 @@ Instale as dependências:
 npm install
 ```
 
+<<<<<<< HEAD
 Renomeie o arquivo .env.example para .env e coloque nele as credenciais do seu banco de dados
 
 Configure o banco de dados inicial:
 ```  
 npm run db:reset
 ```
+=======
+Suba um banco de dados mysql  
+Renomeie o arquivo ```.env.example``` para ```.env``` e configure com as credencias do seu banco de dados 
+>>>>>>> d560e3708c062e7da5f798f6d3f9bd7832278886
   
 Execute a aplicação
 ```  
@@ -42,7 +45,11 @@ Importe esse arquivo para o postman
 O desafio é implementar um backend REST para uma aplicação de músicas utilizando typescript.
 
 Com as seguintes funcionalidades:
+<<<<<<< HEAD
   - [x] Criar uma playlist
+=======
+  - [x] *Criar uma playlist / *não adiciona as musicas
+>>>>>>> d560e3708c062e7da5f798f6d3f9bd7832278886
   - [x] Editar uma playlist
   - [x] Deletar uma playlist
   - [x] Listar todas as playlists
@@ -55,7 +62,7 @@ Com as seguintes funcionalidades:
   - [x] Obs.: Todos os usuário que se cadastram possuem a role USER.
 
   - [x] As rotas de login e registro devem ser as únicas de acesso público. Todas as outras rotas devem ser restritas a usuários autenticados.
-  - [ ] As funcionalidades referente a usuários devem ser acessíveis apenas para usuários com a role "ADMIN" e retornando 403 para os demais usuários.
+  - [x] As funcionalidades referente a usuários devem ser acessíveis apenas para usuários com a role "ADMIN" e retornando 403 para os demais usuários.
   - [x] Se o usuário autenticado tiver a role "USER", então apenas as playlists criadas pelo mesmo devem ser acessíveis.
   - [x] Importante: O usuário inicial deve se chamar "admin" e a senha "admin" e utilizando a role "ADMIN".
 
